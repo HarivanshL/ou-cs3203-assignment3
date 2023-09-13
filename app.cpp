@@ -29,5 +29,6 @@ int main(int argc, char *argv[])
     int productval = product(vec);
     cout<< "Sum: " << sumval <<endl;
     cout<< "Product: " << productval <<endl;
+    //this is without the reversal
    
 }
