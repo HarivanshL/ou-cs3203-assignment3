@@ -19,7 +19,6 @@ int product(vector<int> vec){
 }
 
 int * reversed(vector<int> vec){
-    //vector<int> *send;
     int * arr = new int[vec.size()];
     int count =0;
     for(int i =vec.size()-1; i >=0;--i){
@@ -33,7 +32,6 @@ int * reversed(vector<int> vec){
 int main(int argc, char *argv[])
 {
     vector<int> vec;
-    vector<int> reverseVec;
     int num =0;
     cout<< "Enter numbers to be inserted into the array. -10000 will end inputs"<<endl;
     while(cin>>num){
@@ -50,7 +48,6 @@ int main(int argc, char *argv[])
     cout<< "Sum: " << sumval <<endl;
     cout<< "Product: " << productval <<endl;
     int * p = reversed(vec);
-    //cout<<reverseVec.size()<<endl;
     for(int i =0; i <vec.size();++i){
         cout<< p[i] <<endl;
     }
